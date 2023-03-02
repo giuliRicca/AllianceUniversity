@@ -85,7 +85,7 @@ header a:hover {
 }
 
 .hero .left img{
-  width: 140%;
+  width: 100%;
   margin-left: -5%;
   object-fit: fill;
   height: max-content;
@@ -321,13 +321,15 @@ footer{
   color: #380d36;
   font-weight: 400;
   display: flex;
-
+  align-items: center;
+  font-size: 12px;
   justify-content: space-between;
 }
 
 .socials i{
   padding: 12px;
   border-radius: 50%;
+  font-size: 18px;
   color: #380d36;
   transition: background .3s ease-in-out,
               color .3s ease-in-out;
@@ -346,6 +348,9 @@ footer{
 @media (max-width: 1280px) {
   .hero .left{
     margin-top: 15%;
+  }
+  .hero .left img{
+    width: 80%;
   }
   .hero .right {
     width: 280px;
@@ -368,6 +373,12 @@ footer{
   .form-bottom {
     bottom: -70px;
   }
+  .values-grid h3{
+    font-size: 3.2vw;
+  }
+  .values-grid h4{
+    font-size: 2vw;
+  }
 }
 
 @media all and (max-width: 992px) {
@@ -380,7 +391,6 @@ footer{
   .hero .left {
     margin-top: 15%;
   }
-  
   .hero .right {
     width: 250px;
     margin-top: 15%;
@@ -403,6 +413,18 @@ footer{
   .hero-info p{
     line-height: 15px;
   }
+  .values-grid h3{
+    font-size: 2.8vw;
+  }
+  .values-grid h4{
+    font-size: 1.5vw;
+  }
+  footer{
+    padding-inline: 2rem;
+  }
+  .socials i{
+    font-size: 15px;
+  }
 }
 
 
@@ -413,14 +435,13 @@ footer{
         align-items: center;
     }
     .hero .left{
-        margin-top:30%;
-        /* align-self: baseline; */
+        margin-top:10%;
     }
     .hero .left img{
-      width: 200%;
+      width: 80%;
     }
     .hero .right{
-        margin-top: -20%;
+        margin-top: 5%;
     }
     .form-header p {
         font-size:  .6rem;
@@ -447,12 +468,28 @@ footer{
       .values .right{
         width: 200%;
       }
+      .values-circles{
+        padding: 1rem;
+      }
+      .values-grid{
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+      }
+      .values-grid h3{
+
+        font-size: 4vw;
+      }
+      .values-grid h4{
+        font-size: 2.4vw;
+      }
+
+      .images{
+        gap: 0;
+      }
+      .socials i{
+        font-size: 10px;
+      }
 
     
 }
-
-/* Portrait */
-@media (max-width: 1280px) and (orientation: portrait) {
-  /* Portrait styles here */
-}
-/* Landscape */ 
