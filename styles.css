@@ -413,6 +413,23 @@ footer{
   .hero-info p{
     line-height: 15px;
   }
+  .values .left{
+    display: none;
+  }
+  .values .right{
+    width: 200%;
+    overflow-x: hidden;
+  }
+  .values .right h1{
+    font-size: 10vw;
+  }
+  .values .right p{
+    font-size: 2.7vw;
+    width: 100%;
+  }
+  .values .right ul li span{
+    font-size: 2.3vw;
+  }
   .values-grid h3{
     font-size: 2.8vw;
   }
@@ -462,11 +479,14 @@ footer{
       .hero-info p{
         font-size: 3.6vw;
       }
-      .values .left{
-        display: none;
+      .values .right h2{
+        font-size: vw;
       }
-      .values .right{
-        width: 200%;
+      .values .right p{
+        font-size: 4vw;
+      }
+      .values .right ul li span{
+        font-size: 3.5vw;
       }
       .values-circles{
         padding: 1rem;
@@ -481,7 +501,7 @@ footer{
         font-size: 4vw;
       }
       .values-grid h4{
-        font-size: 2.4vw;
+        font-size: 3vw;
       }
 
       .images{
