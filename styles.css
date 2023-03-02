@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ ul {
+    list-style: none;
+ }
+.main-button{
+    text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0.9vw 4.2vw;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s ease-in,
+                color .2s ease-in;
+}
+
+.main-button:hover{
+    background: none;
+    outline: 2px solid;
+    outline-offset: -2px;
+}
+
+
+header {
+  color: #fff;
+  background: none;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: transparent;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+header ul {
+  line-height: 30px;
+}
+header ul li a {
+  transition: opacity 0.3s ease;
+}
+
+header ul li a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  background: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ic4EgaBvQzEY/v1/-1x-1.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  padding-inline: 5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+/* LEFT HERO SIDE */
+.hero .left {
+  margin-top: 13%;
+}
+.hero .left span {
+  font-size: 3vw;
+  font-weight: 300;
+}
+.hero .left h1 {
+  font-size: 6vw;
+  font-weight: 900;
+}
+
+.hero .left p {
+  margin-top: 0.5rem;
+  width: fit-content;
+  background-color: #ef3e2c;
+  font-size: 3vw;
+  font-style: italic;
+}
+
+/* RIGHT HERO SIDE */
+.hero .right {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  align-items: center;
+  flex-direction: column;
+}
+.form-container {
+  background-color: #FEFCFC;
+  color: #380d36;
+  width: 100%;
+  padding-block: 0.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.form-header {
+  padding: 0.5rem;
+  text-align: center;
+}
+.form-header p{
+  font-size: .9rem;
+}
+.form-header h4 {
+  font-size: 1.8rem;
+}
+
+.form-container form {
+  width: 100%;
+}
+.form-bottom {
+  position: absolute;
+  bottom: -90px;
+  left: -10px;
+  width: 105%;
+}
+form .form-group {
+  margin-bottom: 0.5rem;
+  padding-left: 0.6rem;
+  background-color: #eeeaed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+form input {
+  border: none;
+  background: none;
+  padding-block: 1rem;
+height: 100%;
+  width: 100%;
+}
+
+.hero-info {
+  margin-top: 4rem;
+  text-align: right;
+  margin-right: 2vw;
+}
+.hero-info h3 {
+  font-size: 2.8vw;
+  font-weight: 600;
+}
+.hero-info p {
+  font-size: 1.8vw;
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+.hero-info a {
+  background-color: #FEFCFC;
+  color: #000;
+}
+.hero-info a:hover {
+  color: #FEFCFC;
+  outline-color:  #FEFCFC;
+}
+
+/* Core Values */
+.values{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.values .left {
+    background: url("https://img.freepik.com/free-photo/medium-shot-graduate-student_23-2148950577.jpg");
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+}
+.values .right{
+    padding: 5rem 2rem;
+    background-color: #FEFCFC;
+    position: relative;
+}
+
+.values .right h1{
+    font-size: 6vw;
+    color: #380d36;
+}
+.values .right ul {
+    margin-top: 5%;
+}
+
+.values .right ul li{
+    list-style: none;
+    margin-block: 1.2rem;
+    font-size: 1.8vw;
+    font-weight: 400;
+    transform: scaleY(1.3);
+}
+.values .right ul li span{
+    color: #380d36;
+   
+}
+.values .right ul li i{
+    text-align: center;
+    color:#D01F3B;
+    width: 60px;
+    transform: scaleY(.7);
+}
+.values .right p{
+    font-size: 1.3vw;
+    padding: 0 5% 0 2%;
+    color: #380d36;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    transform: scaleY(1.3);
+}
+
+.values .right .main-button{
+    background-color: #D01F3B;
+    margin-left: 2%;
+}
+
+.values .right .main-button:hover{
+    color: #D01F3B;
+    outline-color:  #D01F3B;
+    background: none;
+}
+
+footer{
+  padding: 2rem 4rem;
+  background-color: #380d36;
+  color: #FEFCFC;
+  font-weight: 400;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.socials i{
+  padding: 12px;
+  border-radius: 50%;
+  color: #FEFCFC;
+  transition: background .3s ease-in-out,
+              color .3s ease-in-out;
+}
+
+.socials i:hover{
+  background-color: #FEFCFC;
+  color: #380d36;
+}
+
+
+@media (max-width: 1280px) {
+    .hero .left{
+        margin-top: 25%;
+    }
+  .hero .right {
+    width: 300px;
+  }
+  .form-header p {
+    font-size: 0.8rem;
+  }
+  .form-header h4 {
+    font-size: 1.5rem;
+  }
+  .form-bottom {
+    bottom: -70px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header {
+    padding: 2rem;
+  }
+  .hero{
+    padding-inline: 2rem
+  }
+  .hero .left {
+    margin-top: 40%;
+  }
+  .hero .right{
+    margin-top: 0;
+  }
+  .hero .right {
+    width: 250px;
+  }
+  .form-header p {
+    font-size: 0.6rem;
+  }
+  .form-header h4 {
+    font-size: 1.2rem;
+  }
+  .form-bottom {
+    bottom: -60px;
+  }
+  label {
+    font-size: 0.6rem;
+  }
+  form input {
+    padding-block: 0.5rem;
+  }
+}
+
+@media all and (max-width: 580px) {
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .hero .left{
+        margin-top:30%;
+        /* align-self: baseline; */
+    }
+    .hero .left h1{
+        font-size: 10vw;
+    }
+    .hero .left span{
+        font-size: 5vw;
+    }
+    .hero .left p{
+        font-size: 5.3vw;
+    }
+    .hero .right{
+        margin-top: 10%;
+    }
+    .form-header p {
+        font-size:  .6rem;
+      }
+      .form-header h4 {
+        font-size: 1rem;
+      }
+      .form-bottom{
+        bottom: -55px;
+        left: -5px;
+      }
+      .hero-info {
+        margin-top: 2rem;
+      }
+      .hero-info h3{
+        font-size: 5vw;
+      }
+      .hero-info p{
+        font-size: 3.6vw;
+      }
+      .values .left{
+        display: none;
+      }
+      .values .right{
+        width: 200%;
+      }
+
+    
+}
+
+/* Portrait */
+@media (max-width: 1280px) and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media (max-width: 768px)  and (orientation: landscape) {
+  .hero .right{
+    margin-top: 20%;
+    /* width: 200px; */
+  }
+}
