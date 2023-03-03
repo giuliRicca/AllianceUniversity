@@ -130,7 +130,7 @@ transform: scale(1.1);
   background-color: #FEFCFC;
   color: #380d36;
   width: 100%;
-  padding-block: 0.5rem;
+  padding-top: 0.5rem;
   border-radius: 10px;
   position: relative;
 }
@@ -151,12 +151,7 @@ transform: scale(1.1);
 .form-container form {
   width: 100%;
 }
-.form-bottom {
-  position: absolute;
-  bottom: -80px;
-  left: -8px;
-  width: 105%;
-}
+
 form .form-group {
   margin-bottom: 0.5rem;
   background-color: #eeeaed;
@@ -176,6 +171,39 @@ form input {
   margin-right: 5px;
   width: 100%;
 }
+
+.submit-button{
+  background-color: #A3E2EA;
+  position: relative;
+  right: 5%;
+  width: 110%;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 1vw 4.2vw;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.submit-button:hover{
+  letter-spacing: 3px;
+}
+
+.form-container:after{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: solid 30px #A3E2EA;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
 
 .hero-info {
   margin-top: 30%;
